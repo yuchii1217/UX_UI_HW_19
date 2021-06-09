@@ -1,0 +1,393 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10%;
+    justify-content:right;
+ 
+}
+#navigation {
+    display: flex;
+    width: 10%;
+    text-align:center;
+    align-items:center;
+    justify-content:right;
+  }
+#navigation p {
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none;
+    margin: 0px 1%;
+  }
+.highlight{
+    color:tomato;
+    
+}
+#hero{
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 100px;
+}
+:nth-last-of-type(1) {flex-grow: 1;}
+:nth-last-of-type(2) {flex-grow: 1;}
+:nth-last-of-type(3) {flex-grow: 5;}
+
+#heroblock{
+    background-color: coral;
+    width: 15%px;
+    float: left;
+    height: 600px;
+    margin:0px;
+}
+#heroleft{
+    background-image: url(../images/mypic1.png);
+    height:500px;
+    width:400px;
+    padding:50px;
+    float: left;
+    margin:0px 0px;
+    background-repeat: no-repeat;
+ }
+#heroright{
+    width:30%;
+    float: left;
+    align-self: center;
+    padding-right:75px;
+ }
+ .headline{
+     color: #23464D;
+ }
+.icons{
+     padding:0px;
+ }
+.p{
+    margin: 0px 10px;
+    text-align: center;
+    color: tomato;
+}
+.heading{
+        background-color:rgba(0,0,0,0.5);
+        padding:15px;
+        height:25px;
+        color:white;
+        font-size: 18px;
+        border-bottom:5px solid coral;
+    }
+#casestudy{
+    margin: 0px 2px;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "casestudy1 casestudy2"
+    "casestudy3 casestudy4"
+}
+.casestudygrid{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*margin:5px;*/
+    cursor:pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+  }
+
+#casestudy1{
+    background-color:#F2F2F2;
+    color:#505050;
+    padding: 20px 100px;
+    margin: 20px;
+}
+#casestudy2{
+    background-color:#73AAB2;
+    padding: 20px 100px;
+    margin: 20px;
+    color:#f2f2f2;
+}
+#casestudy3{
+    background-color:lightsalmon;
+    padding: 20px 100px;
+    margin: 20px;
+    color:#f2f2f2;
+}
+#casestudy4{
+    background-color:#F2F2F2;
+    padding: 20px 100px;
+    margin: 20px;
+    color:#505050;
+}
+.btn{
+    background-color: lightblue;
+    color:black;
+    flex-flow: row center;
+    padding:30px 100px;
+    text-decoration:none;
+    text-align: center;
+    font-size: 16pt;
+}
+.btn:hover{
+    background-color: lightcoral;
+    color: white;;
+}
+.comingsoon{
+    /*outline: rgb(223, 223, 223) solid 2pt;*/
+    background-color:aliceblue;
+    font-size: 20pt;
+    text-align: center;
+    color: coral;
+    padding:30px 50px;
+    margin-top: 25px;
+    align-items: center;
+}
+.subHeading{
+        text-align: center;
+        border-bottom: 5px solid lightsalmon;
+        width:300px;
+        margin:50px auto;
+      }
+#categoryGrid{
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "research research article" 
+    "coffee chillax chillax"
+    "plamstree plamstree plamstree";
+  }
+.categoryGridArea{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:5px;
+    cursor:pointer;
+    display:grid;
+    align-content:end;
+  }
+#research{
+    grid-area:research;
+    background-image: url(..//images/Empathy\ Map_OC\ Hike.gif);
+}
+#article{
+    grid-area:article;
+    background-image: url(../images/article.png);
+}
+#coffee{
+    grid-area:coffee;
+    background-image: url(../images/graphic2.gif);
+}
+#chillax{
+    grid-area:chillax;
+    background-image: url(../images/wireframe.png);
+}
+#plamstree{
+    grid-area:plamstree;
+    background-image: url(../images/prototype.png);
+}
+#categoryGrid2{
+    margin: 0px 5%;
+    display: grid;
+    height: 200px;
+    width:auto;
+    margin-bottom: 15px;;
+    align-content:flex-start;
+    background-color: silver;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-columns: 300px;
+    grid-template-areas:
+    "me inspiration reflection hobby love";
+  }
+.categoryGridArea2{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content:flex-end;
+    cursor:pointer;
+    display: grid;
+    align-content:end;
+  }
+#me{
+    grid-area:me;
+    background-image: url(../images/me.jpg);
+}
+#inspiration{
+    grid-area:inspiration;
+    background-image: url(../images/inspiration.png);
+}
+#reflection{
+    grid-area:reflection;
+    background-image: url(../images/reflection.jpg);
+}
+#hobby{
+    grid-area:hobby;
+    background-image: url(../images/hobby1.jpg);
+}
+#love{
+    grid-area:love;
+    background-image: url(../images/love1.jpg);
+}
+.heading2{
+    background-color:rgba(0,0,0,0.5);
+    padding:15px;
+    height:25px;
+    color:white;
+    font-size: 18px;
+    text-align: center;
+    border-bottom:5px solid #ff6200;
+
+}
+footer{
+background-color: rgb(232, 235, 238);
+padding:20px 50px 5px 50px;
+height: auto;
+width:100%;
+border-bottom:5px solid #ff6200;
+
+}
+.footertitle{
+    font-size: 20pt;
+    text-align: center;
+    color: coral;
+}
+#footerarea{
+    font-size: 14px;
+    margin: 0px 5%;
+    text-align: center;
+    color: rgb(29, 28, 28);
+    justify-content: center;
+
+}
+.footercatagory{
+    margin-bottom: 20px;
+    width: 250px;;
+    text-align: center;
+    display:inline-block;
+   
+ 
+}
+#fineprint{
+    font-size: 12px;
+    text-align:center;
+}
+h1{
+    font-size: 30pt;
+}
+ul{
+    list-style-type: none;  
+}
+.preloader{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    z-index: 10000;
+    background-color: #f6f6f6;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .preloader img{
+    animation: spin 3s ease;
+   
+    justify-content: center;
+    align-items: center;
+  }
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+@media only screen and (max-width: 600px){
+    #hero{
+            width: auto;
+            height:fit-content;
+        }         
+    #casestudy{
+        margin: 0 spx;
+        width:90%;
+        height: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "casestudy1"  
+        "casestudy2"
+        "casestudy3" 
+        "casestudy4"
+    }
+   
+    #navBar {
+        margin-left: 20px;
+        flex-direction: colum;
+        justify-content:space-between;
+     
+    }
+    #navigation {
+        width: auto;
+        margin-right: 30px;
+    }
+    #hero{
+        width:100%;
+        display: inline-block;
+        flex-direction: row;
+        padding: 0px;
+    }
+    #heroblock{
+            background-color: coral;
+            width: 16%;
+            float: left;
+            height: 500px;
+            margin:0px;
+        }
+        #heroleft{
+            padding:0px;
+            float: right;
+          }
+        #heroright{
+            /* outline: 1px solid #ff6200; */
+             width:350px;
+             padding:50px;
+             
+          }
+        
+        #categoryGrid2{
+           height:auto;
+           width:90%;
+           margin-bottom: 15px;
+           align-content:stretch;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+            "me" 
+            "inspiration" 
+            "reflection" 
+            "hobby" 
+            "love";
+          }
+          .categoryGridArea2{
+            background-position: center;
+            width:500px;
+          }
+        .comingsoon{
+            background-color: aliceblue;
+            color:teal;
+        }
+          footer{
+            padding:20px 50px 5px 50px;
+            height: auto;
+            width:auto;
+    }
+}
