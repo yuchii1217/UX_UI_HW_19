@@ -377,8 +377,8 @@ ul{
          
     #casestudy{
         margin: 0 spx;
-        width:100%;
-        height: auto;
+        width:500px;
+        height:auto;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -387,7 +387,6 @@ ul{
         "casestudy3" 
         "casestudy4"
     }
-   
     #navBar {
         margin-left: 20px;
         flex-direction: colum;
@@ -409,7 +408,7 @@ ul{
             background-color: coral;
             width: 16%;
             float: left;
-            height: 500px;
+            height: 100px;
             margin:0px;
         }
         #heroleft{
